@@ -1,0 +1,50 @@
+Montgomery, Alabama, 3, apple
+Juneau, Alaska, 3, apple
+Phoenix, Arizona, 3, apple
+Little Rock, Arkansas, 3, apple
+Sacramento, California, 3, apple
+Denver, Colorado, 3, apple
+Hartford, Connecticut, 3, apple
+Dover, Delaware, 3, apple
+Tallahassee, Florida, 3, apple
+Atlanta, Georgia, 3, apple
+Honolulu, Hawaii, 3, apple
+Boise, Idaho, 3, apple
+Springfield, Illinois, 3, apple
+Indianapolis, Indiana, 3, apple
+Des Moines, Iowa, 3, apple
+Topeka, Kansas, 3, apple
+Frankfort, Kentucky, 3, apple
+Baton Rouge, Louisiana, 3, apple
+Augusta, Maine, 3, apple
+Annapolis, Maryland, 3, apple
+Boston, Massachusetts, 3, apple
+Lansing, Michigan, 3, apple
+Saint Paul, Minnesota, 3, apple
+Jackson, Mississippi, 3, apple
+Jefferson City, Missouri, 3, apple
+Helena, Montana, 3, apple
+Lincoln, Nebraska, 3, apple
+Carson City, Nevada, 3, apple
+Concord, New Hampshire, 3, apple
+Trenton, New Jersey, 3, apple
+Santa Fe, New Mexico, 3, apple
+Albany, New York, 3, apple
+Raleigh, North Carolina, 3, apple
+Bismarck, North Dakota, 3, apple
+Columbus, Ohio, 3, apple
+Oklahoma City, Oklahoma, 3, apple
+Salem, Oregon, 3, apple
+Harrisburg, Pennsylvani, 3, applea
+Providence, Rhode Island, 3, apple
+Columbia, South Carolina, 3, apple
+Pierre, South Dakota, 3, apple
+Nashville, Tennessee, 3, apple
+Austin, Texas, 3, apple
+Salt Lake City, Utah, 3, apple
+Montpelier, Vermont, 3, apple
+Richmond, Virginia, 3, apple
+Olympia, Washington, 3, apple
+Charleston, West Virginia, 3, apple
+Madison, Wisconsin, 3, apple
+Cheyenne, Wyoming, 3, apple
