@@ -1,34 +1,53 @@
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
+
 public class Main {
 
+	
 	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
 		
-		State s1 = new State();
-		State s2 = new State("Texas", "Austin", 33, "Bluebonnet");
 		
-		State[] s3 = new State[2];
+		/*State[] s = ArrayBuilder.buildArray("stateInfo.txt");
 		
-		State[] s4 = new State[50];
+	
+		String[] stateList = new String[50];
+		for(int i = 0; i < s.length; i++) {
+			stateList[i] = s[i].getName();
+		}*/
 		
-		int i = 0;
-		
-		BufferedReader in = new BufferedReader(new FileReader("stateInfo.txt"));
-		
-		String str;
-		
-		while((str = in.readLine()) != null) {
-			String[] info = str.split(";");
-			
-			s4[i] = new State(info[1], info[0], Integer.parseInt(info[2]), info[3]);
-			
-			i++;
-		}
-		
-		System.out.println(s4[1].getName());
-
+		// create a new thread for swing to run in
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				
+				// Create a new JFrame 
+				JFrame frame;
+				
+				
+				try {
+					frame = new MainFrame("USA");
+					// set JFrame properties
+					frame.setSize(500, 400);
+					frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+					frame.setVisible(true);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		});
 	}
 
 }
