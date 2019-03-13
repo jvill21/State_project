@@ -4,17 +4,21 @@ import java.awt.GridBagLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.ListSelectionModel;
 
 public class DetailsPanel extends JPanel {
 
-	public DetailsPanel() {
+	public DetailsPanel() throws Exception {
 		Dimension size = getPreferredSize();
 		size.width = 250;
 		setPreferredSize(size);
 		
-		setBorder(BorderFactory.createTitledBorder("State Info"));
+		
+		// setBorder(BorderFactory.createTitledBorder("State Info"));
 		
 		// set labels for state info
 		JLabel nameLabel = new JLabel("Name: ");
@@ -28,6 +32,7 @@ public class DetailsPanel extends JPanel {
 		JLabel populationInfo = new JLabel("Default");
 		JLabel flowerInfo = new JLabel("Default");
 		
+		
 		// set text fields to display state info
 		// JTextField nameField = new JTextField(10);
 		// JTextField capitolField = new JTextField(10);
@@ -39,10 +44,11 @@ public class DetailsPanel extends JPanel {
 		
 		GridBagConstraints gc = new GridBagConstraints();
 		
+		
 		// set layout for first column of labels
-		gc.anchor = GridBagConstraints.LINE_END;
+		gc.anchor = GridBagConstraints.LINE_START;
 		gc.weightx = 0;
-		gc.weighty = 0.5;
+		gc.weighty = 0;
 		gc.gridx = 0;
 		gc.gridy = 0;
 		add(nameLabel, gc);

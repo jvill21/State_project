@@ -38,7 +38,7 @@ public class Main {
 				try {
 					frame = new MainFrame("USA");
 					// set JFrame properties
-					frame.setSize(500, 400);
+					frame.setSize(800, 800);
 					frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 					frame.setVisible(true);
 				} catch (Exception e) {

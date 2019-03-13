@@ -2,10 +2,12 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -44,10 +46,22 @@ public class MainFrame extends JFrame {
 		JScrollPane scrollPane = new JScrollPane(list);
 		
 		detailsPanel = new DetailsPanel();
+
 		
 		b1 = new JButton("Add State");
 		b2 = new JButton("Remove State");
-		b3 = new JButton("test");
+		b3 = new JButton("Search");
+		
+		// combo box for sorting
+		String[] sorting = {"Option 1", "Option 2", "Option3", "Option 4"};
+		JComboBox sortList = new JComboBox(sorting);
+		sortList.setSelectedIndex(0);
+		// sortList.addActionListener(this);
+		
+		// textField for search
+		JTextField field = new JTextField(20);
+		
+		
 		
 		// add swing components to content panel
 		Container c = getContentPane();
@@ -59,7 +73,9 @@ public class MainFrame extends JFrame {
 		JPanel bottom = new JPanel(new BorderLayout());
 		
 		// add content to the top panel
-		top.add(b3, BorderLayout.CENTER);
+		top.add(b3, BorderLayout.EAST);
+		top.add(sortList, BorderLayout.WEST);
+		top.add(field, BorderLayout.CENTER);
 		
 		// add content to the bottom panel
 		bottom.add(b1, BorderLayout.WEST);
